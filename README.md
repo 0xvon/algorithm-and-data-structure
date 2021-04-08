@@ -4,9 +4,9 @@
 
 ### 実行環境
 
-OS: Mac OS Big Sur
-コンパイラ: gcc
-言語: C
+OS: Mac OS Big Sur<br>
+コンパイラ: gcc<br>
+言語: C<br>
 
 ### 実行
 
