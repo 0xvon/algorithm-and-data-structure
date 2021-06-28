@@ -2,6 +2,7 @@
 #include <sys/stat.h>
 #include <fcntl.h>
 #include <unistd.h>
+// 1X18C058, 堤 真聖, masato.11.soccer@ruri.waseda.jp
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
