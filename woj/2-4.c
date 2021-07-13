@@ -20,7 +20,6 @@ int main(void) {
                 moveUp[i + 1] += order[i] / 10; // push new move up wen needed
                 order[i] %= 10;
             }
-            // printf("%d: num[i]: %d, order[i]: %d, flag[i+1]: %d\n", i, num[i],  order[i], moveUp[i+1]);
         }
     }
     for (i = input - 1; i >= 0; i--) {

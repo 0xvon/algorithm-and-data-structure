@@ -7,8 +7,6 @@ int main(void) {
     int i;
     int histgrams[26] = {0};
     int maxCount = 0;
-    int frequentAlphabets[26];
-    int frequentAlphabetCount = 0;
 
     while(1) {
         char alphabet;
@@ -17,16 +15,17 @@ int main(void) {
 
         char loweredAlphabet = tolower((unsigned char) alphabet);
         for (i = 0; i < 26; i++) {
-            if (alphabets[i] == loweredAlphabet) histgrams[i] ++;
+            if (alphabets[i] == loweredAlphabet) histgrams[i] ++; // アルファベットの出現回数を記録
         }
     }
 
     for (i = 0; i < 26; i++) {
-        if (histgrams[i] > maxCount) maxCount = histgrams[i];
+        if (histgrams[i] > maxCount) maxCount = histgrams[i]; // 最大出現回数をmaxCountに代入
     }
-    printf("%d ", maxCount, frequentAlphabets);
+
+    printf("%d ", maxCount);
     for (i = 0; i < 26; i++) {
-        if (histgrams[i] == maxCount) printf("%c", alphabets[i]);
+        if (histgrams[i] == maxCount) printf("%c", alphabets[i]); // 最大出現回数のアルファベットをprintしていく
     }
     printf("\n");
     return 0;

@@ -10,6 +10,7 @@ int main(void) {
 
         int count = 0, i, j;
 
+        // エラトステネスの篩を2nまで行なう
         int arr[1000000] = {0};
         for(i = 2; i <= n * 2; i++) arr[i] = 1;
 
@@ -18,7 +19,7 @@ int main(void) {
                 for (j = 2 * i; j <= n * 2; j = i + j) arr[j] = 0;
             }
         }
-
+        // nから2nまでの素数の個数を数え上げ
         for ( i = n + 1; i <= n * 2; i++) {
             if (arr[i] == 1) count++;
         }
